@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="navigation/styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="navigation/script.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>San Francisco Crime Report</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+       
+      <div class="container" >
+        <div class="navbar-header" style="width: 300px;">
+           <img src="img/sf_seal.gif" alt="" style="height:60px;width:60px"/>
+            <a class="navbar-brand" href="index.html">San Francisco Crime Data</a>
+           
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form" style="width:103px;" method="get" action="Page2.html">
+              <button type="submit" class="btn btn-success" style="width:100px;">Live Stream</button>
+           </form>
+          
+           <form class="navbar-form navbar-right" role="form" style="width:103px;" method="get" action="maps.html">
+              <button type="submit" class="btn btn-success" style="width:100px;" >History</button>
+           </form>
+           <form class="navbar-form navbar-right" role="form" style="width:103px;" method="get" action="index.html">
+              <button type="submit" class="btn btn-success" style="width:100px;" >Home</button>
+           </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+       
+        
+    </nav>
+
+    
+    <!-- Full Page Image Background Carousel Header -->
+  
+
+        <!-- Controls -->
+     <br>
+	 <br>
+                 <div class="jumbotron"> 
+<div id='cssmenu' style="padding-top: 18px">
+
+    <ul>
+   <li class='active'><a href='#'><span>Year</span></a></li>
+  
+  
+   <li class='has-sub'><a href='#'><span>2014</span></a>
+      <ul>
+          <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col10%2C+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=37.777685167148626&amp;lng=-122.42060641440435&amp;t=1&amp;z=13&amp;l=col9&amp;y=4&amp;tmplt=5&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.5&amp;hmr=41&amp;hmw=0&amp;hml=TWO_COL_LAT_LNG' target="imgbox"> <span>Heat Map</span></a></li>
+         <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC&amp;viz=MAP&amp;h=false&amp;lat=37.791674824314704&amp;lng=-122.4090001866548&amp;t=1&amp;z=13&amp;l=col9&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG' target="imgbox"><span>Location Map</span></a></li>
+         <li><a href="2014.html" target="imgbox"><span> Graphs</span></a></li>
+       
+      </ul>
+   </li>
+   
+   <li class='has-sub'><a href='#'><span>2013</span></a>
+      <ul>
+          <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col10%2C+col9+from+1kVIxBV4QVIb8saEBanoafbzIR49x2vawqpl2r1Gq+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=37.75953170857094&amp;lng=-122.4119292577646&amp;t=1&amp;z=13&amp;l=col10&amp;y=4&amp;tmplt=5&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.78&amp;hmr=38&amp;hmw=0&amp;hml=TWO_COL_LAT_LNG' target="imgbox"> <span>Heat Map</span></a></li>
+         <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col10+from+1kVIxBV4QVIb8saEBanoafbzIR49x2vawqpl2r1Gq+where+col3+%3D+&#39;Friday&#39;&amp;viz=MAP&amp;h=false&amp;lat=37.75936065331835&amp;lng=-122.44454372823867&amp;t=1&amp;z=14&amp;l=col10&amp;y=4&amp;tmplt=5&amp;hml=TWO_COL_LAT_LNG' target="imgbox"><span>Location Map</span></a></li>
+         <li><a href="2013.html" target="imgbox"><span> Graphs</span></a></li>
+      </ul>
+   </li>
+   
+   <li class='has-sub'><a href='#'><span>2012</span></a>
+      <ul>
+          <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col10%2C+col9+from+1z0s41XLz_HJL9vstN95U6Di4Zw80zvOh1HIbVwir+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=37.752660899879274&amp;lng=-122.39171612800895&amp;t=1&amp;z=13&amp;l=col10&amp;y=2&amp;tmplt=3&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.5&amp;hmr=19&amp;hmw=0&amp;hml=TWO_COL_LAT_LNG' target="imgbox"> <span>Heat Map</span></a></li>
+         <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col10+from+1z0s41XLz_HJL9vstN95U6Di4Zw80zvOh1HIbVwir+where+col3+%3D+&#39;Tuesday&#39;&amp;viz=MAP&amp;h=false&amp;lat=37.75220140980248&amp;lng=-122.41338718766677&amp;t=1&amp;z=14&amp;l=col10&amp;y=2&amp;tmplt=3&' target="imgbox"><span>Location Map</span></a></li>
+         <li><a href="2012.html" target="imgbox"><span> Graphs</span></a></li>
+      </ul>
+   </li>
+   
+   <li class='has-sub'><a href='#'><span>2011</span></a>
+      <ul>
+         <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col10%2C+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=37.777685167148626&amp;lng=-122.42060641440435&amp;t=1&amp;z=13&amp;l=col9&amp;y=4&amp;tmplt=5&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.5&amp;hmr=41&amp;hmw=0&amp;hml=TWO_COL_LAT_LNG' target="imgbox"> <span>Heat Map</span></a></li>
+         <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC&amp;viz=MAP&amp;h=false&amp;lat=37.791674824314704&amp;lng=-122.4090001866548&amp;t=1&amp;z=13&amp;l=col9&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG' target="imgbox"><span>Location Map</span></a></li>
+         <li><a href="2011.html" target="imgbox"><span> Graphs</span></a></li>     
+      </ul>
+   </li>
+
+   <li class='has-sub'><a href='#'><span>2010</span></a>
+      <ul>
+          <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col10%2C+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=37.777685167148626&amp;lng=-122.42060641440435&amp;t=1&amp;z=13&amp;l=col9&amp;y=4&amp;tmplt=5&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.5&amp;hmr=41&amp;hmw=0&amp;hml=TWO_COL_LAT_LNG' target="imgbox"> <span>Heat Map</span></a></li>
+         <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC&amp;viz=MAP&amp;h=false&amp;lat=37.791674824314704&amp;lng=-122.4090001866548&amp;t=1&amp;z=13&amp;l=col9&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG' target="imgbox"><span>Location Map</span></a></li>
+         <li><a href="2010.html" target="imgbox"><span> Graphs</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>2009</span></a>
+      <ul>
+        <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col10%2C+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=37.777685167148626&amp;lng=-122.42060641440435&amp;t=1&amp;z=13&amp;l=col9&amp;y=4&amp;tmplt=5&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.5&amp;hmr=41&amp;hmw=0&amp;hml=TWO_COL_LAT_LNG' target="imgbox"> <span>Heat Map</span></a></li>
+         <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC&amp;viz=MAP&amp;h=false&amp;lat=37.791674824314704&amp;lng=-122.4090001866548&amp;t=1&amp;z=13&amp;l=col9&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG' target="imgbox"><span>Location Map</span></a></li>
+         <li><a href="2009.html" target="imgbox"><span> Graphs</span></a></li>
+      </ul>
+   </li>
+      <li class='has-sub'><a href='#'  ><span>2008</span></a>
+      <ul>
+          <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col10%2C+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=37.777685167148626&amp;lng=-122.42060641440435&amp;t=1&amp;z=13&amp;l=col9&amp;y=4&amp;tmplt=5&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.5&amp;hmr=41&amp;hmw=0&amp;hml=TWO_COL_LAT_LNG' target="imgbox"> <span>Heat Map</span></a></li>
+         <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC&amp;viz=MAP&amp;h=false&amp;lat=37.791674824314704&amp;lng=-122.4090001866548&amp;t=1&amp;z=13&amp;l=col9&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG' target="imgbox"><span>Location Map</span></a></li>
+         <li><a href="2008.html" target="imgbox"><span> Graphs</span></a></li>
+      </ul>
+   </li>
+   
+   <li class='has-sub'><a href='#'><span>2007</span></a>
+      <ul>
+         <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col10%2C+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=37.777685167148626&amp;lng=-122.42060641440435&amp;t=1&amp;z=13&amp;l=col9&amp;y=4&amp;tmplt=5&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.5&amp;hmr=41&amp;hmw=0&amp;hml=TWO_COL_LAT_LNG' target="imgbox"> <span>Heat Map</span></a></li>
+         <li><a href='https://www.google.com/fusiontables/embedviz?q=select+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC&amp;viz=MAP&amp;h=false&amp;lat=37.791674824314704&amp;lng=-122.4090001866548&amp;t=1&amp;z=13&amp;l=col9&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG' target="imgbox"><span>Location Map</span></a></li>
+         <li><a href="2007.html" target="imgbox"><span> Graphs</span></a></li>
+      </ul>
+   </li>
+
+
+
+</div>
+    <!-- Page Content -->
+    <div class="container">
+<iframe frameborder="0" scrolling="no" width="915" height="500" src="https://www.google.com/fusiontables/embedviz?q=select+col9+from+16BBMGUkbRRw1Xpn_7JKj6Scw9bX056K90JlibvuC&amp;viz=MAP&amp;h=false&amp;lat=37.791674824314704&amp;lng=-122.4090001866548&amp;t=1&amp;z=13&amp;l=col9&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG" name="imgbox" id="imgbox" style="
+    padding-left: 60px;
+    padding-top: 35px;
+    height: 600px;
+    width: 985px;
+">
+   &lt;p&gt;iframes are not supported by your browser.&lt;/p&gt;
+</iframe>
+<br>
+</div>
+      
+    <div class="container" style="background-color: #222 ">
+      
+        <p align="center" style="color: white;alignment-adjust: central">&copy; Uxplorers 2014 - Crime Data Analysis </p>
+      
+    </div> <!-- /container --> 
+    </div>
+    
+        
+        <!-- Footer -->
+        
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
